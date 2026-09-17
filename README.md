@@ -132,3 +132,51 @@ sprmcrogpu sprmcrogpu-wn13      64         515093     (null)                    
 ucsx       ucsx-ncit-gpu-wn100  64         257158     (null)                    gpu:tesla_a100:3
 xl         xl270-wn[161-162]    56         257138     (null)                    gpu:tesla_p100:2
 ```
+
+## 10) Analizeaza job-uri curente sau din trecut
+
+- Running jobs:
+`sstat --jobs=your_job-id`
+
+Variables: avecpu, averss, avevmsize, jobid, maxrss, maxvmsize, ntasks
+
+More exact:
+`sstat --jobs=your_job-id -a --format=jobid,avecpu,maxrss,ntasks`
+
+- Past jobs:
+`sacct --jobs=your_job-id`
+
+## 11) Controleaza job-uri
+
+Suspenda job:
+
+`scontrol suspend <jobid>`
+
+Resume job:
+
+`scontrol resume <jobid>`
+
+**NOTE**: suspend - resume
+
+Hold job:
+
+`scontrol hold <jobid>`
+
+Release job:
+
+`scontrol release <jobid>`
+
+**NOTE**: hold - release
+
+## 12) Vizualizeaza job
+
+```
+# Output to console
+$ scontrol show job job_id
+
+# Streaming output to a textfile
+$ scontrol show job job_id > outputfile.txt
+
+# Piping output to Grep and find lines containing the word "Time"
+$ scontrol show job job_id | grep Time
+```
