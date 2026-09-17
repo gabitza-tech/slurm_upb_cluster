@@ -12,6 +12,9 @@ How to use slurm in UPB Cluster and in general
   - [7) Rulare multi-task/multi-process](#7-rulare-multi-taskmulti-process)
   - [8) FOLOSIRE GPU](#8-folosire-gpu)
   - [9) Listeaza gpu-urile si partitiile](#9-listeaza-gpu-urile-si-partitiile)
+  - [10) Analizeaza job-uri curente sau din trecut](#10-analizeaza-job-uri-curente-sau-din-trecut)
+  - [11) Controleaza job-uri](#11-controleaza-job-uri)
+  - [12) Vizualizeaza job](#12-vizualizeaza-job)
 
 ### Info server
 Vom folosi două tipuri de cozi pentru folosirea a două tipuri de resurse:
@@ -19,7 +22,21 @@ Vom folosi două tipuri de cozi pentru folosirea a două tipuri de resurse:
 CPU:
 - haswell;
 - nehalem;
-GPU:
+GPU:- [Slurm UPB Cluster](#slurm-upb-cluster)
+    - [Info server](#info-server)
+  - [1) Conectare server](#1-conectare-server)
+  - [2) Logare pe un nod:](#2-logare-pe-un-nod)
+  - [3) Submitere job](#3-submitere-job)
+  - [4) Check running jobs](#4-check-running-jobs)
+  - [5) Cancel job](#5-cancel-job)
+  - [6) Rulare Multi-Core ale Joburilor](#6-rulare-multi-core-ale-joburilor)
+  - [7) Rulare multi-task/multi-process](#7-rulare-multi-taskmulti-process)
+  - [8) FOLOSIRE GPU](#8-folosire-gpu)
+  - [9) Listeaza gpu-urile si partitiile](#9-listeaza-gpu-urile-si-partitiile)
+  - [10) Analizeaza job-uri curente sau din trecut](#10-analizeaza-job-uri-curente-sau-din-trecut)
+  - [11) Controleaza job-uri](#11-controleaza-job-uri)
+  - [12) Vizualizeaza job](#12-vizualizeaza-job)
+
 - ucsx;
 - xl;
 
